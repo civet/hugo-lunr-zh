@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const lunr = require("../");
+const hugolunr = require("../");
 
 const options = {};
 const args = process.argv.slice(2);
@@ -42,7 +42,7 @@ for (let i = 0; i < args.length; i++) {
   }
 }
 // throw JSON.stringify(options);
-lunr(options)
+hugolunr(options)
   .then(() => {
     console.log("done.");
   })

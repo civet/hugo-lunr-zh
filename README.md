@@ -27,8 +27,8 @@ hugo-lunr-zh  -o docs/lunr.json --matter-delims --- --matter-type yaml
 or run it in file:
 
 ```js
-const lunr = require("hugo-lunr-zh");
-lunr({
+const hugolunr = require("hugo-lunr-zh");
+hugolunr({
   output: "docs/index.json"
 }).then(() => {
   console.log("done");
